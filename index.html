@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Easy Image Editor</h2>
+        <div class="d-flex editor-content">
+            <div class="tools">
+                <div class="filter">
+                    <h2>Filter</h2>
+                    <div class="options">
+                        <button class="opt-btn active">Brightness</button>
+                        <button class="opt-btn">Saturation</button>
+                        <button class="opt-btn">Inversion</button>
+                        <button class="opt-btn">Grayscale</button>
+                    </div>
+                </div>
+                <div class="brightness">
+                    <div class="d-flex j-content-between a-center">
+                        <h4>Brightness</h4>
+                        <p class="range-bright">100%</p>
+                    </div>
+                    <input type="range" value="100" min="0%" max="200%">
+                </div>
+                <div class="rotate">
+                    <h5>Rotate & Flip</h5>
+                    <div class="rotate-btns">
+                        <button class="rotate-btn">
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                        </button>
+                        <button class="rotate-btn">
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                        </button>
+                        <button class="rotate-btn">
+                            <i class="bx bx-reflect-vertical"></i>
+                        </button>
+                        <button class="rotate-btn">
+                            <i class="bx bx-reflect-horizontal"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <img src="pexels-luis-del-río-15286.jpg" alt="">
+            </div>
+        </div>
+        <div class="footer d-flex j-content-between a-center">
+            <button class="reset-btn">Reset Filter</button>
+            <div class="btn-container">
+                <input type="file" class="file-input" accept="image/*">
+                <button class="choose-btn">Choose Image</button>
+                <button class="save-btn">Save Image</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
